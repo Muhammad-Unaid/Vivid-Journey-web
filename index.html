@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vivid Journey</title>
+    <link rel="icon" type="image/x-icon" href="#" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Poppins;
+        background-color: #f8f9fa;
+      }
+      .section-heading {
+        background-color: #4e5a45;
+        color: white;
+        padding: 10px;
+        margin-top: 30px;
+        text-align: center;
+      }
+      .menu-item {
+        border-bottom: 1px solid #eee;
+        padding: 15px 0;
+        background: white;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+      .menu-item img {
+        width: 100px;
+        height: auto;
+        border-radius: 5px;
+      }
+      .menu-title {
+        font-weight: bold;
+      }
+      header img {
+        width: 100%;
+        height: auto;
+      }
+      .category-img {
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 20px;
+      }
+      {% comment %} /* Increase size of the chatbot icon */ {% endcomment %}
+      df-messenger {
+        --df-messenger-icon-width: 80px;
+        --df-messenger-icon-height: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="header.png" alt="FoodsInn Promo Banner" />
+    </header>
+
+    <div class="container mt-4">
+      <!-- Deals Section -->
+      <img src="1.png" alt="Deals" class="category-img" />
+
+      <!-- Italian Section -->
+      <img src="2.png" alt="Italian" class="category-img" />
+
+      <!-- Burger Section -->
+      <img src="3.png" alt="Burger" class="category-img" />
+
+      <!-- karahi Section -->
+      <img src="4.png" alt="karahi" class="category-img" />
+
+      <!-- Hot Beverages Section -->
+      <img src="footer.png" alt="Hot Beverages" class="category-img" />
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <p>
+        &copy; 2025
+        <a href="https://softcodix.com/" style="text-decoration: none">
+          SOFTCODIX
+        </a>
+        All rights reserved.
+      </p>
+    </footer>
+
+    <script type="text/javascript">
+      (function (d, m) {
+        var kommunicateSettings = {
+          appId: "232b8c4d13f78d72d07c5b207a04ea2f0",
+          popupWidget: true,
+          automaticChatOpenOnNavigation: true,
+        };
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0];
+        h.appendChild(s);
+        window.kommunicate = m;
+        m._globals = kommunicateSettings;
+      })(document, window.kommunicate || {});
+      /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
