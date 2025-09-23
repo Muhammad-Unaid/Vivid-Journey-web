@@ -74,6 +74,29 @@
       <!-- Hot Beverages Section -->
       <img src="footer.png" alt="Hot Beverages" class="category-img" />
     </div>
+     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="vivid-journey"
+      agent-id="0e17cb3c-e4b7-42c6-830a-f4cfcff3d56d"
+      language-code="en"
+      chat-icon="https:&#x2F;&#x2F;encrypted-tbn0.gstatic.com&#x2F;images?q=tbn:ANd9GcT5qs6btxOoyvJjdJMoPeTxGs25Lqqt1FCBdGWNNxnekg&amps&ampec=73068120"
+      style="
+        --df-messenger-bot-message: #f8d516; /* Bot msg black */
+        --df-messenger-user-message: #a19f9fcc; /* User msg white */
+        --df-messenger-font-color: #000000; /* Bot text white */
+        --df-messenger-button-titlebar-color: #f8d516; /* Header black */
+        --df-messenger-button-titlebar-font-color: #ffffff; /* Header text white */
+        --df-messenger-chat-background-color: #ffffff; /* Chat BG white */
+        --df-messenger-input-box-color: #ffffff; /* Input box white */
+        --df-messenger-input-font-color: #000000; /* Input text black */
+        --df-messenger-input-placeholder-font-color: #555555; /* Placeholder grey */
+        --df-messenger-send-icon: #f8d516; /* Send icon black */
+        --df-messenger-chip-color: #ffffff; /* Chips white */
+        --df-messenger-chip-border-color: #f8d516; /* Chips border black */
+        --df-messenger-minimized-chat-close-icon-color:  #000000; /* Close icon white */
+      "
+    ></df-messenger>
 
     <footer class="bg-dark text-white text-center py-3 mt-5">
       <p>
@@ -85,25 +108,5 @@
       </p>
     </footer>
 
-    <script type="text/javascript">
-      (function (d, m) {
-        var kommunicateSettings = {
-          appId: "232b8c4d13f78d72d07c5b207a04ea2f0",
-          popupWidget: true,
-          automaticChatOpenOnNavigation: true,
-        };
-        var s = document.createElement("script");
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-        var h = document.getElementsByTagName("head")[0];
-        h.appendChild(s);
-        window.kommunicate = m;
-        m._globals = kommunicateSettings;
-      })(document, window.kommunicate || {});
-      /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
